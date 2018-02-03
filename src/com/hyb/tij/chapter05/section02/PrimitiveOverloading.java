@@ -1,4 +1,4 @@
-package com.hyb.tij.chapter05.section22;
+package com.hyb.tij.chapter05.section02;
 
 public class PrimitiveOverloading {
 	void f1(char x) {
