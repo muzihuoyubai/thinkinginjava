@@ -1,5 +1,5 @@
 package com.hyb.tij.chapter10.section04;
-
+@SuppressWarnings("unused")
 public class TestParcel {
 	public static void main(String[] args) {
 		Parcel4 p = new Parcel4();
