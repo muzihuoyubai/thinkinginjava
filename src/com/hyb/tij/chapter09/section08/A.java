@@ -1,5 +1,5 @@
 package com.hyb.tij.chapter09.section08;
-
+@SuppressWarnings("unused")
 public class A {
 	interface B {
 		void f();

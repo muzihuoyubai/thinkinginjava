@@ -42,6 +42,7 @@ public class NestingInterfaces {
 		}
 	}
 	
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		A a = new A();
 		A.DImp2 adimp = new A().new DImp2();
