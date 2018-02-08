@@ -6,10 +6,11 @@ public abstract class Event {
 
 	public Event(long delayTime) {
 		this.delayTime = delayTime;
+		start();
 	}
 
 	public void start() {
-		System.out.println("start time:"+eventTime);
+		eventTime = System.currentTimeMillis() + delayTime;
 	}
 
 	public boolean ready() {

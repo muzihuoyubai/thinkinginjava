@@ -138,7 +138,6 @@ public class GreenhouseControls extends Controller {
 				addEvent(e);
 				LOG.info("add event:{}",e);
 			}
-			this.start();
 		}
 
 		@Override
@@ -146,7 +145,6 @@ public class GreenhouseControls extends Controller {
 			for(Event e: eventList) {
 				e.start();
 				addEvent(e);
-				LOG.info("add event:{},{}",e,Arrays.toString(eventList));
 			}
 			start();
 			addEvent(this);
@@ -161,8 +159,6 @@ public class GreenhouseControls extends Controller {
 	public class Terminate extends Event {
 		public Terminate(long delayTime) {
 			super(delayTime);
-			//这里不调用开始就直接终止了，因为eventTime并没有被设置
-			this.start();
 		}
 
 		@Override

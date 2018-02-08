@@ -12,7 +12,6 @@ public class Controller {
 	private static final Logger LOG = LoggerFactory.getLogger(Controller.class);
 	
 	public void addEvent(Event c) {
-		LOG.info("add:{}",c);
 		eventList.add(c);
 	}
 
