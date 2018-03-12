@@ -20,7 +20,8 @@ public class ListOfGenerics<T> {
 		//integerLists = (ArrayList<Integer>[]) new Object[SIZE];
 		//Cannot create a generic array of ArrayList<Integer>
 		//ArrayList<Integer>[] temp = new ArrayList<Integer>[SIZE];
-
+		ArrayList<Integer>[] temp = (ArrayList<Integer>[])new ArrayList[SIZE];
+		
 		integerLists = new ArrayList[SIZE];
 		System.out.println(integerLists.getClass().getSimpleName());
 		integerLists[0] = new ArrayList<Integer>();
