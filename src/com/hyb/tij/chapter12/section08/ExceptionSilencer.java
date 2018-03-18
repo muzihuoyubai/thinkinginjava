@@ -6,6 +6,7 @@ public class ExceptionSilencer {
 		exceptionThrower();
 	}
 	
+	@SuppressWarnings("finally")
 	static void exceptionThrower() throws Exception {
 		try {
 			throw new Exception();
